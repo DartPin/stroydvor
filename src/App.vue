@@ -1,25 +1,28 @@
 <template>
   <div id="app">
     <Header></Header>
-    <Roll></Roll>
-    <mat-menu></mat-menu>
-    <about></about>
+    <Contacts></Contacts>
+    <Footer></Footer>
+    
+    
   </div>
 </template>
 
 <script>
 import Header from "./components/Header.vue"
-import Roll from "./components/Roll.vue"
-import MatMenu from "./components/Mat-menu.vue"
-import About from "./components/About.vue"
+import Main from "./components/Main.vue"
+import Footer from "./components/Footer.vue"
+import Goods from "./components/Goods.vue"
+import Contacts from "./components/Contacts.vue"
 
 export default {
   name: 'app',
   components: {
     Header,
-    Roll,
-    MatMenu,
-    About
+    Main,
+    Goods,
+    Footer,
+    Contacts
   },
   data () {
     return {
@@ -30,5 +33,11 @@ export default {
 </script>
 
 <style>
-
+html {
+  position: relative;
+  min-height: 100%;
+}
+body{
+  background: rgb(221, 217, 210)
+}
 </style>

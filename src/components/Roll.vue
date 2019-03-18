@@ -3,9 +3,9 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="src\assets\1.jpg" class="d-block w-100" alt="...">
+          <img src="src\assets\11.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>спецпредложение</h5>
+            <h4>спецпредложение</h4>
             <p>кирпич по цене спичечного коробка</p>
           </div>
         </div>
@@ -58,6 +58,8 @@ export default {
 <style>
 .carousel {
   margin: 20px auto 0 auto;
-  width: 1000px;
+}
+.carousel-item{
+  height: 300px;
 }
 </style>
