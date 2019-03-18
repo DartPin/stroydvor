@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Header></Header>
-    <Contacts></Contacts>
+    <Header @newName="componentName = $event"></Header>
+    <component :is="componentName"></component>
     <Footer></Footer>
     
     
@@ -26,7 +26,7 @@ export default {
   },
   data () {
     return {
-     
+      componentName: "Main",
     }
   }
 }

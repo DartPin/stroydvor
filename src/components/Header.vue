@@ -3,9 +3,9 @@
       <div class="logo"><img class="logo-img" src="src\assets\logo.gif" alt=""></div>
       <div class="nav-menu"> 
         <div class="nav-item-block">
-          <div class="nav-item">о нас</div>
-          <div class="nav-item">товар</div>
-          <div class="nav-item">контакты</div>
+          <div class="nav-item" @click="changeName('Main')">о нас</div>
+          <div class="nav-item" @click="changeName('Goods')">товар</div>
+          <div class="nav-item" @click="changeName('Contacts')">контакты</div>
         </div>        
       </div>
       <div class="phone">тел. +7 (912) 345 67 89</div>
@@ -21,7 +21,7 @@ export default {
     }
   },
   methods: {
-    newComponentName: function(value){
+    changeName: function(value){
       this.$emit('newName', value)
     }
   }
@@ -60,12 +60,17 @@ export default {
     width: 50%;
   }
   .nav-item{
-    padding: 0 0 10px 0;
+    text-align: center;
+    margin: 0 0 10px 0;
     width: 30%;
     display: inline-block;
     text-transform: uppercase;
     font-size: 25px;
     color: rgb(36, 37, 51)
+  }
+  .nav-item:hover{
+    cursor: pointer;
+    border-bottom: 2px solid red;
   }
   .phone{
     margin: -45px 20px 0 0;

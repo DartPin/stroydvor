@@ -43,8 +43,12 @@ export default {
     
 <style>
     .contacts{
+        position: absolute;
         background: rgb(129, 137, 184);
         margin: 10px;
+        height: 82%;
+        width: 99%;
+        border-radius: 5px;
     }
     .form-control{
         margin: 0 10px 10px 10px
